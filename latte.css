@@ -1,0 +1,20 @@
+@import "./common.css";
+
+/* Catppuccin Latte */
+:root {
+    --base: #eff1f5;
+    --mantle: #e6e9ef;
+    --crust: #dce0e8;
+    --text: #4c4f69;
+    --overlay0: #9ca0b0;
+    --surface0: #ccd0da;
+    --surface1: #bcc0cc;
+    --blue: #1e66f5;
+    --lavender: #7287fd;
+    --green: #40a02b;
+    --yellow: #df8e1d;
+    --red: #d20f39;
+    --text-filter: invert(31%) sepia(15%) saturate(503%) hue-rotate(197deg)
+        brightness(94%) contrast(89%);
+    --button-opacity: 0.3;
+}

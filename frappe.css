@@ -1,0 +1,20 @@
+@import "./common.css";
+
+/* Catppuccin Frappe */
+:root {
+    --base: #303446;
+    --mantle: #292c3c;
+    --crust: #232634;
+    --text: #c6d0f5;
+    --overlay0: #737994;
+    --surface0: #414559;
+    --surface1: #51576d;
+    --blue: #8caaee;
+    --lavender: #babbf1;
+    --green: #a6d189;
+    --yellow: #e5c890;
+    --red: #e78284;
+    --text-filter: invert(87%) sepia(11%) saturate(343%) hue-rotate(193deg)
+        brightness(103%) contrast(93%);
+    --button-opacity: 0.3;
+}

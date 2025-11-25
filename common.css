@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "Victor Mono Propo";
+    src: url("./fonts/VictorMono/VictorMonoNerdFontPropo-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Victor Mono Propo";
+    src: url("./fonts/VictorMono/VictorMonoNerdFontPropo-Italic.woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Victor Mono Mono";
+    src: url("./fonts/VictorMono/VictorMonoNerdFontMono-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Victor Mono Mono";
+    src: url("./fonts/VictorMono/VictorMonoNerdFontMono-Italic.woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Victor Mono Mono";
+    src: url("./fonts/VictorMono/VictorMonoNerdFontMono-Bold.woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Victor Mono Mono";
+    src: url("./fonts/VictorMono/VictorMonoNerdFontMono-BoldItalic.woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+.reveal {
+    font-family:
+        "Victor Mono Propo",
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    font-size: 1.2rem;
+    background-color: var(--base);
+    color: var(--text);
+
+    h1,
+    h2,
+    h3 {
+        color: var(--blue);
+        margin-bottom: 1rem;
+    }
+
+    .controls {
+        color: var(--lavender);
+        opacity: var(--button-opacity);
+    }
+
+    .progress {
+        color: var(--green);
+    }
+
+    .progress:hover {
+        background-color: var(--red);
+    }
+
+    .slides {
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+        color: var(--blue);
+    }
+
+    blockquote {
+        border-left: 5px solid var(--lavender);
+        background-color: var(--surface0);
+        padding: 10px 20px;
+    }
+
+    ul {
+        margin: 1rem 2rem;
+        line-height: 2;
+    }
+
+    hr {
+        margin: 2rem 0;
+    }
+
+    /* Code Block Styling */
+    --code-font-family: "Victor Mono Mono", ui-monospace, monospace;
+    --code-font-size: 0.88rem;
+    --code-line-height: 1.45;
+    --code-padding-vert: 0.45rem;
+    --code-padding-horz: 0.66rem;
+    --code-max-height: 60vh;
+
+    pre,
+    pre[class*="language-"] {
+        background-color: var(--mantle);
+        color: var(--text);
+        padding: var(--code-padding-vert) var(--code-padding-horz);
+        border-radius: 6px;
+        border: 1px solid var(--surface0);
+        font-family: var(--code-font-family);
+        font-size: var(--code-font-size);
+        line-height: var(--code-line-height);
+        overflow: auto;
+        max-height: var(--code-max-height);
+        white-space: pre;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    pre code,
+    pre code[class*="language-"] {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        display: block;
+        color: inherit;
+    }
+
+    code:not(pre code),
+    code:not([class*="language-"]) {
+        background: transparent;
+        padding: 0.08rem 0.28rem;
+        border-radius: 3px;
+        font-family: var(--code-font-family);
+        font-size: 0.92em;
+    }
+
+    pre code {
+        word-break: normal;
+        hyphens: none;
+    }
+
+    /* Table Styling */
+    --table-border: var(--surface1);
+    --table-cell-border: var(--surface0);
+    --table-font-size: 0.8rem;
+    --table-header-bg: var(--surface1);
+    --table-hover-bg: var(--surface0);
+    --table-zebra-bg: var(--mantle);
+
+    table {
+        width: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font-size: var(--table-font-size);
+        margin: 1rem 0;
+        border: 1px solid var(--table-border);
+        color: var(--text);
+        background-color: transparent;
+    }
+
+    table th,
+    table td {
+        padding: 0.45rem 0.75rem;
+        border: 1px solid var(--table-cell-border);
+        vertical-align: middle;
+        line-height: 1.25;
+    }
+
+    table thead th {
+        background: var(--table-header-bg);
+        color: var(--text);
+        font-weight: 600;
+        border-bottom: 1px solid var(--table-border);
+    }
+
+    table tbody tr:nth-child(even) td {
+        background-color: var(--table-zebra-bg);
+    }
+    table tbody tr:hover td {
+        background-color: var(--table-hover-bg);
+    }
+
+    table td code,
+    table th code {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+}
