@@ -93,6 +93,16 @@
         padding: 10px 20px;
     }
 
+    .callout {
+        background-color: var(--mantle);
+        font-size: 0.73rem;
+    }
+
+    .callout-title {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     img {
         max-width: 100%;
         height: auto;
