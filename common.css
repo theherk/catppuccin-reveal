@@ -41,6 +41,44 @@
     font-display: swap;
 }
 
+/* Color Classes */
+.base {
+    color: var(--base);
+}
+.mantle {
+    color: var(--mantle);
+}
+.crust {
+    color: var(--crust);
+}
+.text {
+    color: var(--text);
+}
+.overlay0 {
+    color: var(--overlay0);
+}
+.surface0 {
+    color: var(--surface0);
+}
+.surface1 {
+    color: var(--surface1);
+}
+.blue {
+    color: var(--blue);
+}
+.lavender {
+    color: var(--lavender);
+}
+.green {
+    color: var(--green);
+}
+.yellow {
+    color: var(--yellow);
+}
+.red {
+    color: var(--red);
+}
+
 .reveal {
     font-family:
         "Victor Mono Propo",
