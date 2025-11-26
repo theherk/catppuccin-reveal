@@ -110,9 +110,8 @@
     --code-padding-horz: 0.66rem;
     --code-max-height: 60vh;
 
-    pre,
-    pre[class*="language-"] {
-        background-color: var(--mantle);
+    pre {
+        background-color: var(--crust);
         color: var(--text);
         padding: var(--code-padding-vert) var(--code-padding-horz);
         border-radius: 6px;
@@ -127,8 +126,7 @@
         -moz-osx-font-smoothing: grayscale;
     }
 
-    pre code,
-    pre code[class*="language-"] {
+    pre code {
         font-family: inherit;
         font-size: inherit;
         line-height: inherit;
@@ -136,8 +134,7 @@
         color: inherit;
     }
 
-    code:not(pre code),
-    code:not([class*="language-"]) {
+    code:not(pre code) {
         background: transparent;
         padding: 0.08rem 0.28rem;
         border-radius: 3px;
