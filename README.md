@@ -1,6 +1,6 @@
 # catppuccin-reveal
 
-This is a [Catppuccin](https://catppuccin.com/) theme for [reveal.js](https://revealjs.com/), specifically for use with [Obsidian Advanced Slides](https://mszturc.github.io/obsidian-advanced-slides/). It is entirely bespoke to me, only includes Frappé and Latte, and is subject to change at any time. That doesn't mean you can't use it, though! In fact, as usual, _**Contributions welcome™**_. For instance, adding mocha and macchiato would be easy peasy. Supporting other selectors would also be simple.
+This is a [Catppuccin](https://catppuccin.com/) theme for [reveal.js](https://revealjs.com/), specifically for use with [Slides Extended](https://github.com/ebullient/obsidian-slides-extended) (or its predecessor, [Obsidian Advanced Slides](https://mszturc.github.io/obsidian-advanced-slides/)). It is entirely bespoke to me, only includes Frappé and Latte, and is subject to change at any time. That doesn't mean you can't use it, though! In fact, as usual, _**Contributions welcome™**_. For instance, adding mocha and macchiato would be easy peasy. Supporting other selectors would also be simple.
 
 ## 🚀 Installation
 
@@ -9,9 +9,11 @@ git clone this
 ./link.sh your/vault/path
 ```
 
+The `link.sh` script auto-detects which plugin is installed, preferring [Slides Extended](https://github.com/ebullient/obsidian-slides-extended) (`slides-extended`) and falling back to [Obsidian Advanced Slides](https://mszturc.github.io/obsidian-advanced-slides/) (`obsidian-advanced-slides`).
+
 ## 🛠️ Usage
 
-Install [Obsidian Advanced Slides](https://mszturc.github.io/obsidian-advanced-slides/) in Obsidian, then create a new slide deck and add the following to the frontmatter:
+Install [Slides Extended](https://github.com/ebullient/obsidian-slides-extended) (or [Obsidian Advanced Slides](https://mszturc.github.io/obsidian-advanced-slides/)) in Obsidian, then create a new slide deck and add the following to the frontmatter:
 
 ```yaml
 theme: css/catppuccin/frappe.css

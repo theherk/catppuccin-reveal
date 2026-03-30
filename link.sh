@@ -31,8 +31,18 @@ for vault in "$@"; do
 		continue
 	fi
 
-	css_dir="$obsidian_dir/plugins/obsidian-advanced-slides/css/catppuccin"
-	hl_dir="$obsidian_dir/plugins/obsidian-advanced-slides/css/highlightjs/catppuccin"
+	plugin_dir=""
+	if [ -d "$obsidian_dir/plugins/slides-extended" ]; then
+		plugin_dir="$obsidian_dir/plugins/slides-extended"
+	elif [ -d "$obsidian_dir/plugins/obsidian-advanced-slides" ]; then
+		plugin_dir="$obsidian_dir/plugins/obsidian-advanced-slides"
+	else
+		echo "Skipping '$vault' (neither slides-extended nor obsidian-advanced-slides found)" >&2
+		continue
+	fi
+
+	css_dir="$plugin_dir/css/catppuccin"
+	hl_dir="$plugin_dir/css/highlightjs/catppuccin"
 
 	mkdir -p "$css_dir" "$hl_dir"
 
@@ -49,5 +59,5 @@ for vault in "$@"; do
 		done
 	fi
 
-	echo "Linked Catppuccin assets into $vault"
+	echo "Linked Catppuccin assets into $vault ($(basename "$plugin_dir"))"
 done
