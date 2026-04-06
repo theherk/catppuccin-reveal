@@ -6,6 +6,10 @@
     --mantle: #e6e9ef;
     --crust: #dce0e8;
     --text: #4c4f69;
+    --text-muted: #9ca0b0;
+    --heading: #1e66f5;
+    --heading-secondary: #7287fd;
+    --link: #1e66f5;
     --overlay0: #9ca0b0;
     --surface0: #ccd0da;
     --surface1: #bcc0cc;
@@ -15,6 +19,14 @@
     --yellow: #df8e1d;
     --peach: #fe640b;
     --red: #d20f39;
+    --rosewater: #dc8a78;
+    --flamingo: #dd7878;
+    --pink: #ea76cb;
+    --mauve: #8839ef;
+    --maroon: #e64553;
+    --teal: #179299;
+    --sapphire: #209fb5;
+    --sky: #04a5e5;
     --text-filter: invert(31%) sepia(15%) saturate(503%) hue-rotate(197deg)
         brightness(94%) contrast(89%);
     --button-opacity: 0.3;

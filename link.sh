@@ -46,10 +46,13 @@ for vault in "$@"; do
 
 	mkdir -p "$css_dir" "$hl_dir"
 
-	link_target "$script_dir/common.css" "$css_dir/common.css"
-	link_target "$script_dir/frappe.css" "$css_dir/frappe.css"
-	link_target "$script_dir/latte.css" "$css_dir/latte.css"
 	link_target "$script_dir/fonts" "$css_dir/fonts"
+
+	for src in "$script_dir"/*.css; do
+		[ -e "$src" ] || continue
+		name=$(basename "$src")
+		link_target "$src" "$css_dir/$name"
+	done
 
 	if [ -d "$script_dir/highlightjs" ]; then
 		for src in "$script_dir"/highlightjs/*; do
