@@ -257,6 +257,66 @@
         font-size: 0.92em;
     }
 
+    /* Mermaid Diagram Styling */
+    .mermaid {
+        max-height: 55vh;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mermaid svg {
+        max-height: 55vh;
+        max-width: 90%;
+        font-size: 0.75rem;
+    }
+
+    .mermaid .node rect,
+    .mermaid .node circle,
+    .mermaid .node polygon {
+        fill: var(--surface0) !important;
+        stroke: var(--lavender) !important;
+    }
+
+    .mermaid .node .label,
+    .mermaid .nodeLabel {
+        color: var(--text) !important;
+        fill: var(--text) !important;
+    }
+
+    .mermaid .edgePath .path {
+        stroke: var(--overlay0) !important;
+    }
+
+    .mermaid .edgeLabel {
+        background-color: var(--mantle) !important;
+        color: var(--text) !important;
+        fill: var(--text) !important;
+    }
+
+    .mermaid .edgeLabel rect {
+        fill: var(--mantle) !important;
+        stroke: none !important;
+    }
+
+    .mermaid marker path {
+        fill: var(--overlay0) !important;
+        stroke: var(--overlay0) !important;
+    }
+
+    .mermaid .cluster rect {
+        fill: var(--mantle) !important;
+        stroke: var(--surface1) !important;
+    }
+
+    .mermaid .cluster-label .nodeLabel,
+    .mermaid .cluster span {
+        color: var(--heading-secondary) !important;
+        fill: var(--heading-secondary) !important;
+    }
+
     /* Table Styling */
     --table-border: var(--surface1);
     --table-cell-border: var(--surface0);
